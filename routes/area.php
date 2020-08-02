@@ -21,6 +21,8 @@
 		}
 	});
 	
+	
+	
 	$app->get('/webapi/listarea/{areaId}', function (Request $request, Response $response,array $parms) {
 		$areaId = $parms['areaId'];
 		$sql = "select * from area where id='".$areaId."'";
